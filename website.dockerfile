@@ -24,7 +24,6 @@ RUN cd /root \
     && mkdir log \
     && touch log/motor-blog.log
 
-RUN touch new.new.txt
 EXPOSE 8888
 
 CMD mongod --dbpath /root/motor-blog/data --logpath /root/motor-blog/data/mongod.log --fork --setParameter textSearchEnabled=true && cd /root/motor-blog && python server.py --debug --config=motor_blog.conf --ensure-indexes
