@@ -1,11 +1,11 @@
-# Product Name
-> Short blurb about what your product does.
+# Website for Social Robotics Group at Uppsala University
+> This project is to build a new website of [social robotics group](http://www.it.uu.se/research/visual_information_and_interaction/research/socialrobotics) at Uppsala University.
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-This project is to build a new website of [social robotics group](http://www.it.uu.se/research/visual_information_and_interaction/research/socialrobotics) at Uppsala University.
+
 
 ![](header.png)
 
