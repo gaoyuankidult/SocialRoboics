@@ -22,7 +22,7 @@ chmod +x install.sh && bash install.sh
 
 Alex Yuan Gao – gaoyuankidult@gmail.com
 
-Distributed under the MIT license. See ``LICENSE`` for more information.
+Distributed under the MIT license. See [MIT LICENSE](https://en.wikipedia.org/wiki/MIT_License) for more information.
 
 [https://github.com/gaoyuankidult/SocialRoboics](https://github.com/gaoyuankidult/SocialRobotics)
 
