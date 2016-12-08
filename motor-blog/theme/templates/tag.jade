@@ -1,0 +1,31 @@
+extends base
+
+block vars
+    title = setting('author_display_name').decode("utf-8")+" | ".decode("utf-8")+this_tag
+    meta_description = setting('description')
+    body_class = 'tag-body multi-body'
+
+block content
+    header
+        h1.title.page-title Tag:&nbsp;
+            = this_tag
+
+    each post in posts
+        include post
+
+    nav.nav-below
+        div.nav-previous
+            a(href=reverse_url('tag-page', this_tag, page_num + 1))
+                span.meta-nav &larr;&nbsp;
+                | Older posts
+
+        if page_num > 0
+            div.nav-next
+                if (page_num > 1)
+                    next_url = reverse_url('tag-page', this_tag, page_num - 1)
+                else
+                    next_url = reverse_url('tag', this_tag)
+
+                a(href=next_url)
+                    | Newer posts
+                    span.meta-nav &nbsp;&rarr;

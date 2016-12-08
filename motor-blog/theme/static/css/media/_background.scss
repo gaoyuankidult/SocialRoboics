@@ -1,0 +1,32 @@
+@mixin bgimage($minwidth, $number) {
+    @media screen and (min-width: #{$minwidth}px) {
+        .backgroundplaceholder#{$number} {
+            content: ' ';
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 800px;
+            height: 600px;
+            background-size: 800px 600px;
+            background-repeat:no-repeat;
+            z-index: -#{(100 - $number)};
+
+            // Non-retina is default.
+            background-image: url("/blog/theme/static/images/paisley-bg-#{$number}.png");
+        }
+    }
+
+    // Possible retina override.
+    @include hidpi(1.5) {
+        .backgroundplaceholder#{$number} {
+            background-image: url("/blog/theme/static/images/paisley-bg-#{$number}@2x.png");
+        }
+    }
+}
+
+@include bgimage(840, 1);
+@include bgimage(880, 2);
+@include bgimage(1050, 3);
+@include bgimage(1270, 4);
+@include bgimage(1330, 5);
+@include bgimage(1540, 6);

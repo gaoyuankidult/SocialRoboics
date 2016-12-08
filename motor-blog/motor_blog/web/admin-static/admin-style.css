@@ -1,0 +1,26 @@
+.admin-nav form, .admin-nav a {
+    display: inline-block;
+}
+
+.admin-nav a {
+    font-weight: bold;
+    color: black;
+    margin: 0 10px;
+}
+
+.admin-table, .admin-table th, .admin-table td {
+    border: 1px solid #666666;
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
+.admin-table th {
+    background-color: #dedede;
+}
+
+.inline-block-form {
+    display: inline-block;
+}
+
+.draft-date, .draft-excerpt, .guest-access-token-info, .guest-access-token-form {
+    margin-left: 1em;
+}

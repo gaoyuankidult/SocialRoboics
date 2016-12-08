@@ -1,0 +1,315 @@
+// Phone is default so no min-width actually set for lowest setting.
+
+* {
+    @include box-sizing(border-box);
+    margin: 0;
+    padding: 0;
+}
+
+input, textarea, button, select {
+    margin: 0;
+    font-size: 100%;
+    line-height: normal;
+    vertical-align: baseline;
+}
+
+/* min-width: 320px (1st gen), 440px (2nd gen), 640px (landscape) */
+// Should put the lowest one you want to support here without media restrictions. 
+// Others in _phone.scss
+body {
+    font-family: Helvetica, sans-serif;
+    @include font-size(14, 21);
+}
+
+blockquote {
+    margin: 0;
+    padding-left: 1em;
+    border-left: 1px solid #ddd;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+}
+
+code {
+    font-size: 90%;
+    padding: 0 2px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 2em 0 1em;
+
+    & > a {
+        text-decoration: none;
+        color: $dark;
+
+        &:hover {
+            color: $link-color;
+        }
+    }
+}
+
+h1 {
+    @include font-size(25, 25);
+    color: $dark;
+}
+
+h2 {
+    @include font-size(18, 19);
+    color: $dark;
+}
+
+h3 {
+    font-variant: small-caps;
+    letter-spacing: 0.05em;
+}
+
+h4, h5 { font-weight: bold; font-style: italic; }
+
+hr {
+    margin-bottom: 1em; // match paragraph margin
+    border: none;
+    width: 100%;
+    height: 19px;
+    background: #fff url("/blog/theme/static/images/hr-small.png") no-repeat scroll center;
+    background-size: 19px 19px;
+
+    @include hidpi(1.5) {
+        background-image: url("/blog/theme/static/images/hr-small@2x.png");
+    }
+}
+
+pre {
+    @include font-size(13, 16);
+    margin-bottom: 1.25em;
+    overflow: auto;
+    white-space: pre-wrap;
+}
+
+.container {
+    @include clearfix;
+    margin: 0 7%;
+    text-align: center;
+}
+
+header {
+    @include center;
+}
+
+.main-header {
+    @include clearfix;
+    margin: 0.5em auto 0;
+
+    h1 {
+        @include font-size(20, 24);
+        margin: 0.5em 0 0;
+        a { color: $grey; }
+    }
+
+    padding-bottom: 0.5em;
+}
+
+.home-body .main-header {
+    padding-bottom: 1em;
+    border-style: solid;
+
+    // header-bottom-border.png is 240px x 33px
+    border-width:0 0 33px;
+    max-width: 240px;
+    @include border-image(url(/blog/theme/static/images/header-bottom-border.png) 0 0 33 0);
+
+    @include hidpi(1.5) {
+       	@include border-image(url(/blog/theme/static/images/header-bottom-border@2x.png) 0 0 66 0);
+    }
+}
+
+.logo {
+    // center
+    margin: 0 auto;
+    display: block;
+    width: 42px;
+    height: 42px;
+    border: 5px solid black;
+    background-color: $lightgrey;
+}
+
+.main-nav ul {
+    @include center;
+    list-style: none outside none;
+
+    li {
+        @include font-size(12, 19);
+        display: inline;
+        margin: 0.5em;
+
+        a { color: $dark; }
+    }
+
+    // Start by hiding all nav items and gradually reveal as screen width increases
+    .nav-item, .nav-divider {
+        @include hidden;
+    }
+
+    .all-posts-nav-item, .about-nav-item {
+        @include visible-inline;
+    }
+
+    .search-item {
+        @include visible;
+        clear: both;
+        margin: 0;
+    }
+}
+
+.search-text-input, .search-button {
+    height: 1.5em;
+}
+
+.search-text-input {
+    float: left;
+    width: 65%;
+}
+
+.search-button {
+    @include button;
+    float: right;
+    width: 30%;
+}
+
+section {
+    // Center
+    margin: 0 auto;
+}
+
+article {
+    text-align: justify;
+    margin: 0 0 1em;
+
+    // Necessary for the right-arrow style, below
+    position: relative;
+
+    ul, ol {
+        padding: 0 0 0 20px;
+        margin: 0.5em 0;
+
+        li ul, li ol {
+            margin: 0 0 0 1.5em;
+        }
+    }
+}
+
+.post-meta {
+    @include font-size($font-size - 4, 19);
+    margin: 0 0 1em;
+    color: $lightgrey;
+}
+
+.byline {
+    @include hidden;
+}
+
+.home-body, .all-posts-body, .category-body, .tag-body, .search-body {
+    .post-content {
+        @include hidden;
+    }
+
+    // Make a right-arrow on the article content
+    // See http://www.yuiblog.com/blog/2010/11/22/css-quick-tip-css-arrows-and-shapes-without-markup/
+    article:after {
+        content: ' ';
+        position: absolute;
+        height: 0;
+    	width: 0;
+        left: 100%;
+       	top: 50%;
+        border: 0.75em solid transparent;
+       	border-left-color: $grey;
+    }
+}
+
+.single-body  {
+    .main-nav {
+        @include hidden;
+    }
+
+    .post-summary {
+        @include hidden;
+    }
+
+    article {
+        border-top: none;
+    }
+}
+
+.post-summary {
+    // Make room for the arrow
+    padding-right: 0.5em;
+
+    a {
+        text-decoration: none;
+        color: $dark;
+    }
+}
+
+.entry-meta, .entry-meta a {
+    color: $grey;
+}
+
+.post-list {
+    list-style: none outside none;
+    text-align: left;
+
+    .summary-title, .excerpt {
+        display: block;
+        font-weight: normal;
+        text-decoration: none;
+        &:hover { text-decoration: underline; }
+        margin: 0 0 0.5em;
+    }
+
+    .summary-title {
+        @include font-size(18, 21);
+        font-weight: bold;
+        color: $dark;
+    }
+
+    .excerpt {
+        margin-bottom: 2em;
+        color: $dark;
+    }
+}
+
+.nav-below {
+    margin-top: 2em;
+}
+
+.nav-below, .nav-below a {
+    color: $grey;
+}
+
+.nav-previous, .nav-next {
+    @include button;
+    width: 50%;
+    min-height: 3em;
+    padding: 0.8em;
+}
+
+.nav-previous {
+    float: left;
+}
+
+.nav-next {
+    float: right;
+}

@@ -1,0 +1,265 @@
+@media screen and (min-width: 480px) {
+    .main-nav ul {
+        margin-top: 0.5em;
+
+        li {
+            margin: 0 0.5em;
+        }
+
+        .photography-nav-item, .feed-nav-item {
+            @include visible-inline;
+        }
+
+        .search-item { margin-top: 0.5em; }
+    }
+
+    hr {
+        background-size: 300px 19px;
+
+        // Replace hr-small.png
+        background-image: url("/blog/theme/static/images/hr.png");
+
+        @include hidpi(1.5) {
+            background-image: url("/blog/theme/static/images/hr@2x.png");
+        }
+    }
+}
+
+// Upgrade font, move nav to side, justify text, full articles on home page
+// The next few upgrades keep the whole layout left-floated and spend extra
+// width on the right on ever-wider paisley backgrounds. We build much of the
+// layout around a 2em-thick cross dividing the logo, the article header,
+// the nav links, and the article body.
+@media screen and (min-width: 720px) {
+    $logo_dim: 74px;
+    body {
+        font-family: Museo-300, serif;
+        line-height: 20px;
+    }
+
+    h1, h2, h3, h4, h5 {
+        font-family: Museo-500, serif;
+        font-weight: normal;
+        margin: 1.5em 0 1em;
+    }
+
+    h3 {
+        // Museo-500 small caps are overwrought
+        font-family: Museo-300;
+    }
+
+    .container {
+        float: left;
+        margin: 0;
+    }
+
+    .home-body .main-header {
+        border: none;
+        @include prefixer(border-image, none, webkit moz spec);
+    }
+
+    .main-header {
+        position: fixed;
+        top: 5px;
+        left: 5px;
+        padding: 0 5px;
+        margin-left: 42px;
+        width: 84px;
+
+        h1 {
+            @include hidden;
+        }
+    }
+
+    .main-nav {
+        ul {
+            margin-top: 28px; // central cross is 28px thick
+            float: right;
+            color: $grey;
+            text-transform: lowercase;
+
+            a {
+                font-family: Museo-300;
+                text-decoration: none;
+                &:hover {
+                    color: $link-color;
+                }
+            }
+
+            // Show categories
+            .all-posts-nav-item, .about-nav-item,
+            .photography-nav-item, .feed-nav-item,
+            .category-nav-item, .search-item,
+            .nav-divider-1, {
+                @include visible;
+                margin: 0 0 0.5em;
+                text-align: right;
+            }
+
+            .nav-divider {
+                margin-top: 1em;
+                margin-right: -.125em;
+            }
+        }
+    }
+
+    .logo {
+        float: right;
+        margin: 0;
+        // 1-column-width, minus gutter, square
+        width: $logo_dim;
+        height: $logo_dim;
+        border: floor($logo_dim / 9) solid black;
+    }
+
+    .search-text-input {
+        margin-top: 1em;
+    }
+
+    .search-text-input, .search-button {
+        float: right;
+        width: $logo_dim;
+    }
+
+    .search-text-input {
+        margin: 1em 0 0.25em;
+    }
+
+    .search-button {
+        margin: 0.25em 0;
+    }
+
+    .post-summary p, .post-content li, .post-content p, .post-list .summary-title {
+        @include font-size(15, 23);
+    }
+
+    section {
+        background-color: white;
+        text-align: left;
+        margin-left: 161px;
+        width: 500px;
+    }
+
+    section > article:first-child {
+        border-top: none;
+    }
+
+    article > header, section > header {
+        text-align: left;
+        margin: 14px 0 28px; // 28px central cross
+        border-bottom: 1px solid $lightergrey;
+
+        // Push down the article title so it's base-aligned with logo
+        height: $logo_dim;
+
+        // Makes h1.title's "position:absolute; bottom: 0" work.
+        position: relative;
+    }
+
+    .post-meta {
+        @include font-size(14, 24);
+    }
+
+    h1.title {
+        color: black;
+        margin: 0;
+
+        display: block;
+        position: absolute;
+        bottom: 0;
+
+        background-color: white;
+        margin: 0;
+
+        a:hover {
+            text-decoration: none;
+            color: $link-color;
+        }
+    }
+
+    .byline {
+        @include visible-inline;
+    }
+
+    article {
+        border-top: none;
+        margin: 0.5em 0 1em;
+    }
+
+    article.post {
+        border-bottom: 1px dotted $lightergrey;
+    }
+
+    // Remove article summaries and their "more" right-arrows
+    article:after { @include hidden; }
+
+    .home-body, .category-body, .tag-body {
+        .post-summary {
+            @include hidden;
+        }
+
+        .post-content {
+            @include visible;
+        }
+    }
+
+    // Remove border beneath article header for the first article in the list,
+    // on pages like Category where multiple full articles are shown
+    .category-body section > article:nth-child(2) > header,
+    .tag-body section > article:nth-child(2) > header {
+        border-bottom: none;
+    }
+
+    .single-body {
+        .main-header { border-bottom: none; }
+        .main-nav { @include visible; }
+    }
+
+    // Remove button style from bottom nav links
+    .nav-previous, .nav-next {
+        @include nobutton;
+        @include font-size(18, 21);
+        width: 45%;
+        font-weight: bold;
+        margin-bottom: 1em;
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .post-list {
+        .summary-title, .date {
+            margin-bottom: 0.5em;
+        }
+
+        a {
+            font-family: Museo-300;
+        }
+    }
+}
+
+// Grow fonts, move content 15px to right
+@media screen and (min-width: 1200px) {
+    .main-header {
+        left: 20px;
+    }
+
+    section {
+        width: 590px;
+        margin-left: 175px;
+    }
+
+    .post-list {
+        .summary-title {
+            @include font-size(19, 21);
+        }
+
+        .date, .excerpt {
+            @include font-size(16, 21);
+        }
+    }
+
+    .post-content li, .post-content p {
+        @include font-size(17, 26);
+    }
+}

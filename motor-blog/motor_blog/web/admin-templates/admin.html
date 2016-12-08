@@ -1,0 +1,11 @@
+<html>
+<head>
+    <title>{% block title %}{% end %}</title>
+    <link rel="stylesheet" type="text/css" href="/{{ setting('base_url') }}/admin/static/admin-style.css">
+    {% block extra-head %}{% end %}
+</head>
+<body>
+{% include "admin-nav.html" %}
+{% block content %}{% end %}
+</body>
+</html>

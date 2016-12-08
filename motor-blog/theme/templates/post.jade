@@ -1,0 +1,28 @@
+post_url = reverse_url('post', post.slug)
+
+article(class=post.type)
+    header
+        if (post.type == 'post')
+            .post-meta
+                local_long_date = post.local_long_date(handler.application)
+                time(
+                    title="#{ local_long_date } #{ post.local_time_of_day(handler.application) }"
+                ).post-time= local_long_date
+
+                author_display_name = setting('author_display_name')
+                if author_display_name
+                    span.byline
+                        span.sep &nbsp;&mdash;&nbsp;
+                        span.author= author_display_name
+
+        h1.title
+            a(href=post_url)
+                = post.title
+
+    // Include both summary and display content; CSS chooses which to show
+    .post-summary
+        a(href=post_url)
+            != post.summary
+
+    .post-content
+        != post.body

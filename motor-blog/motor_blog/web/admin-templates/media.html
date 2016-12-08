@@ -1,0 +1,49 @@
+{% extends "admin.html" %}
+
+{% block title %}{{ setting('blog_name') }} - Media{% end %}
+
+{% block extra-head %}
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.delete-media').submit(function() {
+                return confirm("Really delete it forever?");
+            });
+        });
+    </script>
+{% end %}
+
+{% block content %}
+    {% if mediadocs %}
+        <p>
+            Note that if you ever update a file, all versions appear here.
+        </p>
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Bytes</th>
+                    <th>Dimensions</th>
+                    <th>Uploaded</th>
+                    <th></th>
+                </tr>
+            </thead>
+        {% for media in mediadocs %}
+        <tr>
+            <td><a class="title" href="{{ reverse_url('media', media['filename']) }}">{{ media['filename'] }}</a></td>
+            <td class="size">{{ int(media['length'] / 1024) }} k</td>
+            <td class="size">{{ media.get('width') }} x {{ media.get('height') }}</td>
+            <td class="date">{{ handler._convert_header_value(media['uploadDate']) }}</td>
+            <td>
+            <form action="{{ reverse_url('delete-media') }}" method="post" class="delete-media">
+                <input type="hidden" name="media_id" value="{{ media['_id'] }}">
+                <input type="submit" value="delete">
+            </form>
+            </td>
+        </tr>
+        {% end %}
+        </table>
+    {% else %}
+        <p>No media. Upload some by adding images to your posts in MarsEdit!</p>
+    {% end %}
+{% end %}

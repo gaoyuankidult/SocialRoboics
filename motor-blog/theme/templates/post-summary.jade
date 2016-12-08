@@ -1,0 +1,4 @@
+li
+    a(href=reverse_url('post', post.slug)).summary-title!= post.title
+    a(href=reverse_url('post', post.slug))
+        span.excerpt!= post.display_summary
