@@ -2361,7 +2361,7 @@
 		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 		padding: 0;
 	}
-
+		
 		#nav:after {
 			content: '';
 			display: block;
@@ -2475,7 +2475,7 @@
 /* Banner */
 
 	#banner {
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/home-banner.jpg");
 		background-position: center center;
 		background-size: cover;
 		height: 28em;
