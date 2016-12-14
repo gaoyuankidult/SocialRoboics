@@ -2023,14 +2023,16 @@
 			margin: 0 2em 2em 0;
 			position: relative;
 			top: 0.25em;
-		}
+			background: url(blah.jpg) 50% 50% no-repeat;
+			width: 150px;
+			height: 150px;
+			overflow: hidden;
 
+		}
 			.image.left img {
 				display: block;
-				width: 100%;
 			}
-
-		.image.fit {
+			.image.fit {
 			display: block;
 		}
 
@@ -2046,7 +2048,7 @@
 
 			.image.featured img {
 				display: block;
-				width: 100%;
+				width: 30%;
 			}
 
 /* Icon */
