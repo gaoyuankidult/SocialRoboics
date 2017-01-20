@@ -82,7 +82,7 @@
 	}
 
 	.container {
-		width: 1400px;
+		width: 80%;
 	}
 
 	@media screen and (max-width: 1680px) {
@@ -1809,7 +1809,7 @@
 	body, input, select, textarea {
 		color: #474747;
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 16pt;
+		font-size: 14pt;
 		font-weight: 300;
 		line-height: 1.65em;
 	}
@@ -1910,7 +1910,7 @@
 	}
 
 		header.major h2 {
-			font-size: 2.25em;
+			font-size: 1.8em;
 		}
 
 		header.major p {
@@ -1919,7 +1919,7 @@
 			padding: 1em 0 0 0;
 			margin: 0;
 			top: -1em;
-			font-size: 1.5em;
+			font-size: 1.3em;
 			letter-spacing: -0.025em;
 		}
 
@@ -2024,8 +2024,20 @@
 			position: relative;
 			top: 0.25em;
 			background: url(blah.jpg) 50% 50% no-repeat;
-			width: 150px;
-			height: 150px;
+			width: 300px;
+			height: 300px;
+			overflow: hidden;
+
+		}
+		.image.right {
+			display: block;
+			float: right;
+			margin: 0 2em 2em 0;
+			position: relative;
+			top: 0.25em;
+			background: url(blah.jpg) 50% 50% no-repeat;
+			width: 300px;
+			height: 300px;
 			overflow: hidden;
 
 		}
@@ -2319,7 +2331,7 @@
 		}
 
 		.box.post .inner {
-			margin-left: calc(30% + 2em);
+			margin-left: calc(3% + 0em);
 		}
 
 			.box.post .inner > :last-child {
