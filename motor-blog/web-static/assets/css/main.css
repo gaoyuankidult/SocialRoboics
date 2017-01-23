@@ -3128,13 +3128,16 @@
 			}
 
 			.box.post .inner {
-				margin-left: calc(30% + 20px);
+				margin-left: calc(3% + 20px);
 			}
 
 			.box.post .image {
-				width: 30%;
+				width: 90%;
 			}
 
+			.box.post .h3 {
+				margin-top: -20px;
+			}
 		/* Banner */
 
 			#banner {
