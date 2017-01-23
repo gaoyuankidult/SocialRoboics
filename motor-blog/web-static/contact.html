@@ -12,6 +12,14 @@
 
     <link rel="stylesheet" href="ism/css/my-slider.css"/>
     <script src="ism/js/ism-2.2.min.js"></script>
+
+    <script>
+        function sendMail() {
+            var link = "mailto:ginevra.castellano@it.uu.se";
+            window.location.href = link;
+        }
+    </script>
+
 </head>
 <body>
 <div id="page-wrapper">
@@ -56,29 +64,17 @@
                 </p>
             </div>
             <div class="row" style="display: table; margin: 0 auto; ">
-                <h3>Get in Touch</h3>
-                <form>
-                    <div class="row 50%" >
-                        <div class="6u 12u(mobilep)">
-                            <input type="text" name="name" id="name" placeholder="Name" />
-                        </div>
-                        <div class="6u 12u(mobilep)">
-                            <input type="email" name="email" id="email" placeholder="Email" />
-                        </div>
-                    </div>
+                <h3>Get in Touch:</h3>
+
                     <div class="row 50%">
                         <div class="12u">
-                            <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
-                        </div>
-                    </div>
-                    <div class="row 50%">
-                        <div class="12u">
+                            Send to email address: ginevra.castellano (at) it.uu.se or
+                            </br>
                             <ul class="actions">
-                                <li><input type="submit" class="button alt" value="Send Message" /></li>
+                                <li><input type="submit" class="button alt" value="Click Here" onclick="sendMail(); return false"/></li>
                             </ul>
                         </div>
                     </div>
-                </form>
 
 
             </div>
