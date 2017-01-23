@@ -28,7 +28,7 @@ def get_application(root_dir, db, option_parser):
         U(r"/api", APIHandler, name='api'),
         U(r"/rsd", RSDHandler, name='rsd'),
 	# Test
-    (r"/(.*)", web.StaticFileHandler, {"path": "web-static"}),
+    (r"/(.*)", web.StaticFileHandler, {"path": "web-static","default_filename":"index.html"}),
         # Admin
         #U(r"admin/?", LoginHandler, name='login'),
         #U(r"admin/logout/?", LogoutHandler, name='logout'),
