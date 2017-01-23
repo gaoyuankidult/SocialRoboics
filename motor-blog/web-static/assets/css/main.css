@@ -2340,7 +2340,7 @@
 
 		.box.post .image {
 			width: 25%;
-			hight:25%;
+			hight:auto;
 			margin: 0;
 		}
 
