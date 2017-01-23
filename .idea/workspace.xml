@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fce9fc1-2506-4f1f-a965-081560c9ae78" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/motor-blog/web-static/contact.html" afterPath="$PROJECT_DIR$/motor-blog/web-static/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/motor-blog/web-static/assets/css/main.css" afterPath="$PROJECT_DIR$/motor-blog/web-static/assets/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/motor-blog/web-static/index.html" afterPath="$PROJECT_DIR$/motor-blog/web-static/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/motor-blog/web-static/people.html" afterPath="$PROJECT_DIR$/motor-blog/web-static/people.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/motor-blog/web-static/projects.html" afterPath="$PROJECT_DIR$/motor-blog/web-static/projects.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/motor-blog/web-static/publications.html" afterPath="$PROJECT_DIR$/motor-blog/web-static/publications.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/motor-blog/web-static/research.html" afterPath="$PROJECT_DIR$/motor-blog/web-static/research.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/motor-blog/web-static/teaching.html" afterPath="$PROJECT_DIR$/motor-blog/web-static/teaching.html" />
     </list>
     <ignored path="SocialRoboics.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,21 +27,22 @@
         <entry file="file://$PROJECT_DIR$/motor-blog/web-static/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="630">
-              <caret line="108" column="69" selection-start-line="108" selection-start-column="69" selection-end-line="108" selection-end-column="69" />
+              <caret line="108" column="59" selection-start-line="108" selection-start-column="59" selection-end-line="108" selection-end-column="59" />
               <folding>
                 <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#9061#9067#0" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#9076#9082#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/motor-blog/web-static/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
+            <state relative-caret-position="420">
               <caret line="64" column="53" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -82,10 +77,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/motor-blog/web-static/assets/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="541">
+              <caret line="2342" column="20" selection-start-line="2342" selection-start-column="20" selection-end-line="2342" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="projects.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/motor-blog/web-static/projects.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="-1660">
               <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
               <folding />
             </state>
@@ -145,15 +150,15 @@
         <option value="$PROJECT_DIR$/motor-blog/web-static/researches.html" />
         <option value="$PROJECT_DIR$/../index.html" />
         <option value="$PROJECT_DIR$/../gaoyuankidult.github.com/about/index.md" />
-        <option value="$PROJECT_DIR$/motor-blog/web-static/assets/css/main.css" />
         <option value="$PROJECT_DIR$/motor-blog/motor_blog/application.py" />
         <option value="$PROJECT_DIR$/motor-blog/web-static/people.html" />
         <option value="$PROJECT_DIR$/motor-blog/web-static/research.html" />
         <option value="$PROJECT_DIR$/motor-blog/web-static/projects.html" />
         <option value="$PROJECT_DIR$/motor-blog/web-static/publications.html" />
         <option value="$PROJECT_DIR$/motor-blog/web-static/teaching.html" />
-        <option value="$PROJECT_DIR$/motor-blog/web-static/index.html" />
         <option value="$PROJECT_DIR$/motor-blog/web-static/contact.html" />
+        <option value="$PROJECT_DIR$/motor-blog/web-static/index.html" />
+        <option value="$PROJECT_DIR$/motor-blog/web-static/assets/css/main.css" />
       </list>
     </option>
   </component>
@@ -241,6 +246,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web-static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SocialRoboics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SocialRoboics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="motor-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SocialRoboics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SocialRoboics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="motor-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -575,7 +628,8 @@
             <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9061#9067#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9076#9082#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -588,7 +642,8 @@
             <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9061#9067#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9076#9082#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -601,7 +656,8 @@
             <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9061#9067#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9076#9082#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -663,7 +719,8 @@
             <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9061#9067#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9076#9082#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -743,7 +800,8 @@
             <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9061#9067#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9076#9082#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -798,7 +856,8 @@
             <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9061#9067#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9076#9082#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -876,14 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/motor-blog/web-static/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="1912" column="26" selection-start-line="1912" selection-start-column="26" selection-end-line="1912" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda2/envs/gym/lib/python3.5/site-packages/tornado/web.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-315">
@@ -946,14 +997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/motor-blog/web-static/projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/motor-blog/web-static/publications.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -993,25 +1036,42 @@
     <entry file="file://$PROJECT_DIR$/motor-blog/web-static/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
-          <caret line="108" column="69" selection-start-line="108" selection-start-column="69" selection-end-line="108" selection-end-column="69" />
+          <caret line="108" column="59" selection-start-line="108" selection-start-column="59" selection-end-line="108" selection-end-column="59" />
           <folding>
             <element signature="n#style#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9061#9067#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9076#9082#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/motor-blog/web-static/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
+        <state relative-caret-position="420">
           <caret line="64" column="53" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#4562#4568#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/motor-blog/web-static/projects.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1660">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/motor-blog/web-static/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="2342" column="20" selection-start-line="2342" selection-start-column="20" selection-end-line="2342" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

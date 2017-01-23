@@ -82,7 +82,7 @@
 	}
 
 	.container {
-		width: 80%;
+		width: 90%;
 	}
 
 	@media screen and (max-width: 1680px) {
@@ -2331,7 +2331,7 @@
 		}
 
 		.box.post .inner {
-			margin-left: calc(3% + 0em);
+			margin-left: calc(0% + 0em);
 		}
 
 			.box.post .inner > :last-child {
@@ -2339,7 +2339,8 @@
 			}
 
 		.box.post .image {
-			width: 30%;
+			width: 25%;
+			hight:25%;
 			margin: 0;
 		}
 
