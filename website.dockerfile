@@ -16,15 +16,15 @@ RUN python -m pip install motor
 RUN pip install greenlet
 
 RUN cd /root \
-    && git clone https://github.com/ajdavis/motor-blog.git \
-    && cd motor-blog \
+    && git clone https://github.com/gaoyuankidult/SocialRoboics.git\
+    && cd SocialRoboics/motor-blog \
     && pip install -r requirements.txt \
     && mkdir data \
-    && cp /root/motor-blog/motor_blog.conf.example /root/motor-blog/motor_blog.conf \
+    && cp /root/SocialRoboics/motor-blog/motor_blog.conf.example /root/SocialRoboics/motor-blog/motor_blog.conf \
     && mkdir log \
     && touch log/motor-blog.log
 
 EXPOSE 8888
 
-CMD mongod --dbpath /root/motor-blog/data --logpath /root/motor-blog/data/mongod.log --fork --setParameter textSearchEnabled=true && cd /root/motor-blog && python server.py --debug --config=motor_blog.conf --ensure-indexes
+CMD mongod --dbpath /root/SocialRoboics/motor-blog/data --logpath /root/SocialRoboics/motor-blog/data/mongod.log --fork --setParameter textSearchEnabled=true && cd /root/SocialRoboics/motor-blog && python server.py --debug --config=motor_blog.conf --ensure-indexes
 
