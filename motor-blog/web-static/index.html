@@ -14,6 +14,13 @@
 		<link rel="stylesheet" href="ism/css/my-slider.css"/>
 		<link rel="stylesheet" href="ism/css/social-robotics-lab.css">
 		<script src="ism/js/ism-2.2.min.js"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+		<script> 
+		  $(function(){
+		  $("#includedHeader").load("header.html"); 
+		  });
+		</script>
+		
 	</head>
 	<body>
 		<div id="page-wrapper">
@@ -21,8 +28,8 @@
 			<!-- Header -->
 				<div id="header">
 					<!-- Logo -->
-					<h1><a href="index.html" id="logo">Social Robotics Lab <em>@ Uppsala University</em></a></h1>
-						
+					<!-- <h1><a href="index.html" id="logo">Social Robotics Lab <em>@ Uppsala University</em></a></h1> -->	
+					<div id="includedHeader"></div>
 					<!-- Nav -->
 					<nav id="nav">
 						<ul>
