@@ -1808,7 +1808,7 @@
 
 	body, input, select, textarea {
 		color: #474747;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Lovelo',sans-serif;
 		font-size: 14pt;
 		font-weight: 300;
 		line-height: 1.65em;
@@ -2010,6 +2010,11 @@
 		display: inline-block;
 		position: relative;
 		border-radius: 5px;
+		/* max-width: 100%; */
+		/* height: auto; */
+		/* width: auto; */
+		/* max-width: 100%; */
+		/* max-height:100%; */
 	}
 
 		.image img {
@@ -2030,16 +2035,15 @@
 
 		}
 		.image.right {
-			display: block;
+			/* display: block; */
 			float: right;
-			margin: 0 2em 2em 0;
-			position: relative;
-			top: 0.25em;
-			background: url(blah.jpg) 50% 50% no-repeat;
-			width: 300px;
-			height: 300px;
-			overflow: hidden;
-
+			/* margin: 0 2em 2em 0; */
+			/* position: relative; */
+			/* top: 0.25em; */
+			/* background: url(blah.jpg) 50% 50% no-repeat; */
+			/* width: 300px; */
+			/* height: 300px; */
+			/* overflow: hidden; */
 		}
 			.image.left img {
 				display: block;
@@ -2339,11 +2343,11 @@
 			}
 
 		.box.post .image {
-			width: 280px;
+			/* width: 280px; */
 			hight: 200px;
-			max-width: 100%;
-			max-height: 100%;
-			margin: 0;
+			/* max-width: 100%; */
+			/* max-height: 100%; */
+			/* margin: 0; */
 		}
 
 /* Header */
