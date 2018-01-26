@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>People @ Social Robotics Lab</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 11]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+		<script> 
+		  $(function(){
+		  $("#includedHeader").load("header.html"); 
+		  });
+		</script>
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+					<!-- Logo -->
+					<h1 hidden><a href="index.html" id="logo">Uppsala Social Robotics Lab</em></a></h1>
+					<!-- <h1><a href="index.html" id="logo">Social Robotics Lab <em>@ Uppsala University</em></a></h1> -->
+					<!-- <div id="includedHeader"></div> -->
+						
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+						<!--
+							<li><a href="index.html">Home</a></li>
+							<li><a href="news.html">Researches</a></li>
+							<li  class="current"><a href="people.html">People</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="teaching.html">Teaching</a></li>
+							<li><a href="publications.html">Publications</a></li>
+						-->
+							<li><a href="index.html">Home</a></li>
+							<li><a href="research.html">Research</a></li>
+							<li  class="current"><a href="people.html">People</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</nav>
+				</div>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row 200%">
+							<div class="4u 12u(narrower)">
+								<div id="sidebar">
+
+
+								</div>
+							</div>
+							<div class="4u  12u(narrower) important(narrower)">
+								<div id="content">
+									<!-- Content -->
+										<article>
+											<header>
+											  <h2>Ginevra Castellano</h2>
+											  <p>Associate Professor<br/> Lab Leader of Social Robotics Lab</p>
+											</header>
+
+											<span class="image featured"><img src="images/people-ginevra.jpg" alt="" /></span>
+											<h6><a href="http://user.it.uu.se/~ginca820/">Ginevra Castellano's Personal Website</a></h6>
+
+											<header>
+											  <h2>Maike Paetzel</h2>
+											  <p>Ph.D. Candidate</p>
+											</header>
+											<span class="image featured"><img src="images/people-maike.jpg" alt="" /></span>
+											<h6><a href="https://maike-paetzel.de/ ">Maike Paetzel's Personal Website</a></h6>
+
+											<header>											
+											  <h2>Erik Ekstedt</h2>
+											  <p>Master Student</p>
+											</header>
+											<!--<span class="image featured"><img src="images/people-alex.jpg" alt="" /></span> -->
+											<!-- <h6><a href="http://gaoyuankidult.github.io/about/">Alex Yuan Gao's Personal Website</a></h6>-->
+										</article>
+								</div>
+							</div>
+							<div class="4u  12u(narrower) important(narrower)">
+								<div id="content">
+									<!-- Content -->
+										<article>
+											<header>
+											<header>
+											<h2>Mohammad Obaid</h2>
+												<p>Researcher</p>
+											</header>
+											<span class="image featured"><img src="images/mohammad.jpg" alt="" /></span>
+                                            <h6><a href="http://t2i.se/mohammad-obaid/">Mohammad Obaid's Personal Website</a></h6>
+
+											<header>											
+											  <h2>Alex Yuan Gao</h2>
+											  <p>Ph.D. Candidate</p>
+											</header>
+											<span class="image featured"><img src="images/people-alex.jpg" alt="" /></span>
+											<h6><a href="http://gaoyuankidult.github.io/about/">Alex Yuan Gao's Personal Website</a></h6>
+
+											<!--<span class="image featured"><img src="images/people-alex.jpg" alt="" /></span> -->
+											<!-- <h6><a href="http://gaoyuankidult.github.io/about/">Alex Yuan Gao's Personal Website</a></h6>-->
+
+
+
+										</article>
+
+								</div>
+							</div>							
+						</div>
+						
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<div id="footer">
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Social Robotics Lab. All rights reserved</li><li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
