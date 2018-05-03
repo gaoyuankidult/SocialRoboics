@@ -417,7 +417,7 @@
 	}
 
 	.\34 u, .\34 u\24 {
-		width: 33.3333333333%;
+		width: 80.3333333333%;
 		clear: none;
 		margin-left: 0;
 	}
@@ -491,7 +491,7 @@
 		margin-left: 25%;
 	}
 
-	.\-2u {
+ .\-2u {
 		margin-left: 16.66667%;
 	}
 
@@ -853,7 +853,7 @@
 		.\33 u\28normal\29, .\33 u\24\28normal\29 {
 			width: 25%;
 			clear: none;
-			margin-left: 0;
+ 			margin-left: 0;
 		}
 
 		.\32 u\28normal\29, .\32 u\24\28normal\29 {
@@ -2064,7 +2064,7 @@
 
 			.image.featured img {
 				display: block;
-				width: 30%;
+				width: 80%;
 			}
 
 /* Icon */
@@ -3182,3 +3182,18 @@
 			}
 
 	}
+
+#container {
+    overflow: hidden;
+}
+#sidebar {
+    float: left;
+}
+#sidebar {
+    width: 200px;
+}
+#content {
+    display: block;
+    overflow: hidden;
+}
+	

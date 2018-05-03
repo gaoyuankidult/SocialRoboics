@@ -15,10 +15,13 @@
 		<link rel="stylesheet" href="css/social-robotics-lab.css">
 		<script src="ism/js/ism-2.2.min.js"></script>
 		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
-		<script> 
+		<script>
+		  
 		  $(function(){
 		  $("#includedHeader").load("header.html"); 
 		  });
+
+
 		</script>
 		
 	</head>
@@ -29,12 +32,13 @@
 				<div id="header">
 					<!-- Logo -->
 					<h1 hidden><a href="index.html" id="logo">Uppsala Social Robotics Lab</a></h1>
-					<h1 style="position: absolute;left: 9%;top: 21px;color: white;font-size: 1.4vw;"><a href="index.html" id="logo">Uppsala Social Robotics Lab</a></h1>
+
 				
 					<!-- Nav -->
 					<!-- <img src="images/logo.png" style="width:100px; height:50p" > -->
 
 					<nav id="nav">
+
 						<ul>
 							<!--
 							<li  class="current"><a href="index.html">Home</a></li>
@@ -44,7 +48,8 @@
 							<li><a href="teaching.html">Teaching</a></li>
 							<li><a href="publications.html">Publications</a></li>
 							-->
-							<li  class="current"><a href="index.html">Home</a></li>
+							<h1 style="position: absolute; left: 9%; color: white;font-size: 1.4vw;" id ="main-title"><a href="index.html" id="logo">Uppsala Social Robotics Lab</a></h1>
+							<li  class="current"  id="home"><a href="index.html">Home</a></li>
 							<li><a href="research.html">Research</a></li>
 							<li><a href="people.html">People</a></li>
 							<li><a href="contact.html">Contact Us</a></li>
@@ -123,7 +128,7 @@
 						  <br/>
 						  <br/>
 						  <h2 style="color:black">Welcome to the Social Robotics Lab at Uppsala University</h2>
-							<p style="color:black" align="left"> <span style="font-size:0.8em "> &nbsp;&nbsp;&nbsp;&nbsp;We aim to design and develop robots that learn to interact socially with humans and bring benefits to the society we live in, for example in application areas such as education, e-learning, healthcare and assistive technology.</span></p>
+						  <div style="width:80%; margin: 0 auto;" ><p style="color:black" align="left"> <span style="font-size:0.8em "> We aim to design and develop robots that learn to interact socially with humans and bring benefits to the society we live in, for example in application areas such as education, e-learning, healthcare and assistive technology.</span></p><div/>
 						</header>
 					</div>
 					<div class="container" style="width: 49%;  margin: 0 auto 0 auto; text-align: left; float:right">
@@ -270,6 +275,17 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script>
 
-	</body>
+			  function resize() {
+			  var $x = parseInt(parseInt($('#home').height(),10)/2.0,10);
+			  var $y = parseInt(parseInt($('#main-title').height(),10)/2.0,10);
+			  $('#main-title').css({top:parseInt($x-$y)});
+			  
+			  }
+			  $(window).on("resize", resize);
+			  resize();
+			</script>
+</body>
+
 </html>
